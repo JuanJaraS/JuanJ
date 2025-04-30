@@ -44,8 +44,8 @@ def image_to_ascii(path, new_width=100):
     return ascii_image
 
 
-image_path = "C:/Users/juanj/Downloads/Nico.png"  
-ascii_result = image_to_ascii(image_path, new_width=480)
+image_path = "C:/Users/plazavespucio/Downloads/Nico.jpg"  
+ascii_result = image_to_ascii(image_path, new_width=450)
 
 
 if ascii_result:
