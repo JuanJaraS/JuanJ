@@ -59,25 +59,64 @@ def boleta():
 
 
 
-total = 0  
-while True:
-    op = int(input("""Seleccione una opción:
-          1.-Ingresar Nombre
-          2.-Menú productos
-          3.-Boleta
-          4.-Salir
-          """))
-    match op:
-        case 1:
-            nombre()
-        case 2:
-            menú()
-        case 3:
-            boleta()
-        case 4:
-            print("¡Muchas gracias por su compra!")
-            break
-        case _:
-            print("Opción no válida")
+# total = 0  
+# while True:
+#     op = int(input("""Seleccione una opción:
+#           1.-Ingresar Nombre
+#           2.-Menú productos
+#           3.-Boleta
+#           4.-Salir
+#           """))
+#     match op:
+#         case 1:
+#             nombre()
+#         case 2:
+#             menú()
+#         case 3:
+#             boleta()
+#         case 4:
+#             print("¡Muchas gracias por su compra!")
+#             break
+#         case _:
+#             print("Opción no válida")
 
-      
+# promedios por cantidad de alumnos
+#
+
+
+# Pedir cantidad de alumnos
+# Pedir cantidad de notas por cada alumno
+# Promediar a cada alumno
+# Mostrar si aprueba o reprueba
+# Bonus: mostrar promedio de todo el curso
+
+cantia = int(input("Ingrese la cantidad de alumnos: "))
+suma_promedios = 0  
+
+for i in range(cantia):
+    cantn = int(input(f"Ingrese la cantidad de notas del alumno {i+1}: "))
+    suma_notas = 0
+
+    for x in range(cantn):
+        nota = float(input(f"Ingrese la nota número {x+1}: "))
+        suma_notas += nota
+
+    promalum = suma_notas / cantn
+    suma_promedios += promalum
+
+    
+    if promalum >=4.0:
+        print("Aprobado")
+        estado="aprobado" 
+    else:
+        print("Reprobado")
+        estado="reprobado"
+
+
+    print(f"El promedio del alumno {i+1} es {promalum:.2f} ({estado})")
+
+
+prom_curso = suma_promedios / cantia
+print(f"El promedio general del curso es: {prom_curso:.2f}")
+
+
