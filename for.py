@@ -111,15 +111,15 @@ def lavado():
             case 1:
                 total+=15000
                 autos+=1
-                mayor_pago=max(mayorpago, 15000)
+                mayorpago=max(mayorpago, 15000)
             case 2:
                 total+=10000
                 autos+=1
-                mayor_pago=max(mayorpago, 10000)
+                mayorpago=max(mayorpago, 10000)
             case 3:
                 total+=7000
                 autos+=1
-                mayor_pago=max(mayorpago, 7000)
+                mayorpago=max(mayorpago, 7000)
             case 4:
                 print("Saliendo del menú de lavado.")
                 print('''Menú principal:
@@ -137,7 +137,7 @@ def lavado():
 def ventas():
     print(f"Las ventas totales del día son ${total}")
     print(f"La cantidad de autos lavados hoy es {autos}")
-    print(f"El monto total más alto pagado por un lavado es ${mayor_pago}")
+    print(f"El monto total más alto pagado por un lavado es ${mayorpago}")
 
 print('''Menú principal:
         1.- Menú de lavado
