@@ -92,12 +92,12 @@
 
 total=0
 autos=0
-mayor_pago=0  
+mayorpago=0  
 
 def lavado():
     global total
     global autos
-    global mayor_pago
+    global mayorpago
     while True:
         print('''Menú de lavado:
               1.- Full $15000
@@ -111,15 +111,15 @@ def lavado():
             case 1:
                 total+=15000
                 autos+=1
-                mayor_pago=max(mayor_pago, 15000)
+                mayor_pago=max(mayorpago, 15000)
             case 2:
                 total+=10000
                 autos+=1
-                mayor_pago=max(mayor_pago, 10000)
+                mayor_pago=max(mayorpago, 10000)
             case 3:
                 total+=7000
                 autos+=1
-                mayor_pago=max(mayor_pago, 7000)
+                mayor_pago=max(mayorpago, 7000)
             case 4:
                 print("Saliendo del menú de lavado.")
                 print('''Menú principal:
